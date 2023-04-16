@@ -1,4 +1,6 @@
 
+//Different Game States Enum
+
 public enum GameState {
 	Playing,
 	Draw,

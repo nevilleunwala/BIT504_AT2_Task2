@@ -33,8 +33,8 @@ public class Cell {
 		int y1 = row * GameMain.CELL_SIZE + GameMain.CELL_PADDING;
 		if (content == Player.Cross) {
 			graphic2D.setColor(Color.RED);
-			int x2 = (col + 1) * GameMain.CELL_SIZE - GameMain.CELL_PADDING;
-			int y2 = (row + 1) * GameMain.CELL_SIZE - GameMain.CELL_PADDING;
+			int x2 = (col+1) * GameMain.CELL_SIZE - GameMain.CELL_PADDING;
+			int y2 = (row+1) * GameMain.CELL_SIZE - GameMain.CELL_PADDING;
 			graphic2D.drawLine(x1, y1, x2, y2);
 			graphic2D.drawLine(x2, y1, x1, y2);
 		}else if (content == Player.Nought) {
@@ -46,7 +46,7 @@ public class Cell {
 	/** Set this cell's content to EMPTY */
 	public void clear() {
 		
-		// TODO: Set the value of content to Empty (Remember this is an enum)
+		//Set the value of content to Empty (Remember this is an enum)
 
 		content = Player.Empty;
 	}
